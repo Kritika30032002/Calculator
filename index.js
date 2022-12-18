@@ -1,18 +1,26 @@
-let a= document.getElementsByClassName('k');
-let s= document.getElementById('text');
-let z;
-Array.from(a).forEach(element => {
-    element.addEventListener('click',function(){
-        console.log(element.value);
-        s.value+=element.value;
-        z= s.value;
+let screen = document.getElementById('screen');
+buttons = document.querySelectorAll('button');
+let screenValue = '';
+for (item of buttons) {
+    item.addEventListener('click', (e) => {
+        buttonText = e.target.innerText;
+        console.log('Button text is ', buttonText);
+        if (buttonText == 'X') {
+            buttonText = '*';
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+        else if (buttonText == 'C') {
+            screenValue = "";
+            screen.value = screenValue;
+        }
+        else if (buttonText == '=') {
+            screen.value = eval(screenValue);
+        }
+        else {
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+
     })
-    let m=document.getElementById("a=");
-    m.addEventListener('click',function(){
-        s.value=eval(z);
-    })
-    let m1=document.getElementById("aC");
-    m1.addEventListener('click',function(){
-        s.value="";
-    })
-});
+}
