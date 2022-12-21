@@ -26,9 +26,6 @@ git push origin branch-name
 * Open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to the <b> main </b> branch of the repository and wait for it to be merged.
 
 
-
-
-
 ![image](https://user-images.githubusercontent.com/83400697/207385823-04ef7028-6040-4640-b683-7af97e70c3bd.png)
 
 
