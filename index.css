@@ -38,9 +38,9 @@ body {
   outline: 0;
   width: 60px;
   height: 60px;
-  box-shadow: -8px -8px 15px rgba(248, 74, 74, 0.3),
+  box-shadow: -8px -8px 15px rgba(115, 120, 133, 0.3),
     5px 5px 15px rgba(0, 0, 0, 0.2);
-  background-color: rgb(232, 61, 61);
+  background-color: rgba(72, 121, 255, 0.5);
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -48,7 +48,14 @@ body {
 }
 
 .grid-item1:hover {
-  background-color: rgb(239, 106, 106);
+  background-color: rgba(72, 121, 255, 0.5);
+}
+
+.grid-item1:active {
+  background-color: rgba(72, 121, 255, 0.5);
+  box-shadow: 0 5px -8px -8px 15px rgba(248, 74, 74, 0.3),
+  5px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
 }
 
 .container {
@@ -77,16 +84,35 @@ input {
 button {
   border-radius: 50%;
   font-size: 40px;
+  box-shadow: -8px -8px 15px -8px -8px 15px rgba(248, 74, 74, 0.3),
+  5px 5px 15px rgba(0, 0, 0, 0.2);
   background: white;
   width: 102px;
   height: 100px;
   margin: 6px;
 }
-
+button:active {
+  background-color: white;
+  box-shadow: 0 5px -8px -8px 15px rgba(248, 74, 74, 0.3),
+  5px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(3px);
+}
 .calculator {
   border: 4px solid black;
   background-color: #1f1f1f;
-  padding: 23px;
-  border-radius: 53px;
+  padding: 23px 25px;
+  border-radius: 30px;
   display: inline-block;
+}
+.cut {
+  background-color: crimson;
+}
+.cut:hover{
+  background-color: crimson;
+}
+.result {
+  background-color: rgba(206, 206, 54, 0.8);
+}
+.result:hover{
+  background-color: rgba(206, 206, 54, 0.8);
 }
